@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#00D4FF">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Saray Ortiz Cordero - Programadora Full-Stack Junior especializada en desarrollo web.">
+    <meta name="keywords" content="Programadora, Full-Stack, Desarrollo Web, Portfolio">
+    <meta name="author" content="Saray Ortiz Cordero">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saray Ortiz Cordero | Programadora Full-Stack Junior">
+    <meta property="og:description" content="Saray Ortiz Cordero - Programadora Full-Stack Junior especializada en desarrollo web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sarayortizcoder.github.io/">
+    <title>Saray Ortiz Cordero | Programadora Full-Stack Junior</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <!-- Preconnect para optimización -->
+    <link rel="Preconnect" href="https://fonts.googleapis.com">
+    <link rel="Preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="scroll-progress"></div>
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+            <div class="nav_container">
+                <a href="#inicio" class="nav_logo" aria-label="Ir al inicio">
+                    <div class="nav_logo-code">
+                        <span class="code-symbol code-symbol--1">&lt;</span>
+                        <span class="code-symbol code-symbol--2">/</span>
+                        <span class="code-symbol code-symbol--3">&gt;</span>
+                    </div>
+                </a>
+
+                <button class="nav_toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav_toggle-line"></span>
+                    <span class="nav_toggle-line"></span>
+                    <span class="nav_toggle-line"></span>
+                </button>
+
+                <ul class="nav_menu" id="nav-menu" role="list">
+                    <li class="nav_item">
+                        <a href="#inicio" class="nav_link">Inicio</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#proyectos" class="nav_link">Proyectos</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#sobre-mi" class="nav_link">Sobre mí</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contacto" class="nav_link">Contacto</a>
+                    </li>
+                    <li class="nav_item nav_item--cta">
+                        <a href="assets/pdf/CV-Saray-Ortiz-Cordero.pdf" class="nav_cta-btn" aria-label="Ver currículum vitae en PDF" target="_blank">Ver Currículum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Sección Hero/Inicio -->
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <canvas class="hero_canvas"></canvas>
+            <div class="hero_container">
+                <div class="hero_content">
+                    <p class="hero_greeting" aria-label="Saludo">Hola, soy</p>
+                    <h1 id="hero-title" class="hero_name">Saray Ortiz Cordero</h1>
+                    <h2 class="hero_subtitle">Programadora Full-Stack Junior</h2>
+                    <p class="hero_description">
+                        Apasionada por la tecnología, el desarrollo web y la creación de experiencias digitales innovadoras.
+                    </p>
+                    <div class="hero_cta">
+                        <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn--secondary">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="projects" aria-labelledby="proyectos-title">
+            <div class="projects_container">
+                <div class="section-header">
+                    <h2 id="projects-title" class="section-header_title">Proyectos</h2>
+                    <p class="section-header_description">Algunos de mis trabajos recientes.</p>
+                </div>
+                
+                <div class="projects_grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="project-card_image">
+                            <img src="assets/images/olympus-cars.png" alt="Proyecto Olympus Cars" loading="lazy">
+                        </div>
+                        <div class="project-card_content">
+                            <h3 class="project-card_title">Olympus Cars</h3>
+                            <p class="project-card_description">
+                                Sitio web para concesionario de vehículos de lujo, desarrollado como proyecto académico y optimizado con diseño premium, filtrado avanzado, formulario con validación en tiempo real y mapa interactivo.
+                            </p>
+                            <ul class="project-card_tags" role="list" aria-label="Tecnologías utilizadas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">jQuery</li>
+                                <li class="tag">Leaflet</li>
+                                <li class="tag">Font Awesome</li>
+                            </ul>
+
+                            <div class="project-card_actions">
+                                <a href="https://sarayortizcordero.github.io/Olympus-Cars/" class="btn-project btn-project--demo" target="_blank" aria-label="Ver demo de Olympus Cars">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Ver Demo
+                                </a>
+                                <a href="https://github.com/SarayOrtizCordero/Olympus-Cars" class="btn-project btn-project--code" target="_blank" rel="noopener noreferrer" aria-label="Ver código fuente de Olympus Cars en GitHub">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card_image">
+                            <img src="assets/images/video-game-universe.png" alt="Proyecto Video Game Universe" loading="lazy">
+                        </div>
+                        <div class="project-card_content">
+                            <h3 class="project-card_title">Video Game Universe</h3>
+                            <p class="project-card_description">
+                                Sitio web estático desarrollado como parte de mi formación en desarrollo frontend, enfocado en la visualización de videojuegos con diseño responsivo, accesibilidad WCAG 2.1 y arquitectura CSS modular.
+                            </p>
+                            <ul class="project-card_tags" role="list" aria-label="Tecnologías utilizadas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">Font Awesome</li>
+                                <li class="tag">Responsive Design</li>
+                                <li class="tag">WCAG 2.1</li>
+                            </ul>
+
+                            <div class="project-card_actions">
+                                <a href="https://sarayortizcordero.github.io/Video-Game-Universe/" class="btn-project btn-project--demo" target="_blank" aria-label="Ver demo de Video Game Universe">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Ver Demo
+                                </a>
+                                <a href="https://github.com/SarayOrtizCordero/Video-Game-Universe" class="btn-project btn-project--code" target="_blank" rel="noopener noreferrer" aria-label="Ver código fuente de Video Game Universe en GitHub">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 (En proceso) -->
+                    <article class="project-card project-card--in-progress" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card_image">
+                            <img src="assets/images/reading-world.png" alt="Proyecto Reading World (En proceso)" loading="lazy">
+                            <span class="project-card_badge">En proceso</span>
+                        </div>
+                        <div class="project-card_content">
+                            <h3 class="project-card_title">Reading World</h3>
+                            <p class="project-card_description">
+                                Plataforma web en desarrollo enfocada en la lectura interactiva y gamificada. Actualmente en fase de construcción, con diseño inicial y arquitectura base.
+                            </p>
+                            <ul class="project-card_tags" role="list" aria-label="Tecnologías previstas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">Generative AI</li>
+                            </ul>
+
+                            <div class="project-card_actions">
+                                <a href="#" class="btn-project btn-project--demo disabled" aria-disabled="true">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Demo próximamente
+                                </a>
+                                <a href="#" class="btn-project btn-project--code disabled" aria-disabled="true" target="_blank" rel="noopener noreferrer" aria-label="Ver código fuente de Reading World en GitHub">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Código próximamente
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card project-card--in-progress" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card_image">
+                            <img src="assets/images/next-project.png" alt="Proyecto Reading World (En proceso)" loading="lazy">
+                            <span class="project-card_badge">En proceso</span>
+                        </div>
+                        <div class="project-card_content">
+                            <h3 class="project-card_title">Proximo proyecto</h3>
+                            <p class="project-card_description">
+                                Proyecto en proceso. Este proyecto se desarrollará próximamente, videojuego de toma de decisipones con integración de IA generativa para una experiencia comoda.
+                            </p>
+                            <ul class="project-card_tags" role="list" aria-label="Tecnologías previstas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">Python</li>
+                                <li class="tag">Generative AI</li>
+                            </ul>
+
+                            <div class="project-card_actions">
+                                <a href="#" class="btn-project btn-project--demo disabled" aria-disabled="true">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Demo próximamente
+                                </a>
+                                <a href="#" class="btn-project btn-project--code disabled" aria-disabled="true" target="_blank" rel="noopener noreferrer" aria-label="Ver código fuente de Reading World en GitHub">
+                                    <svg class="btn-project_icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Código próximamente
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mi -->
+        <section id="sobre-mi" class="about" aria-labelledby="about-title">
+            <div class="about_container">
+                <div class="section-header">
+                    <h2 id="about-title" class="section-header_title">Sobre mí</h2>
+                    <p class="section-header_description">
+                        Conoce más sobre mi trayectoria y habilidades.
+                    </p>
+                </div>
+
+                <div class="about_content">
+                    <div class="about_bio" data-aos="fade-right">
+                        <p class="about_text">
+                            Soy <strong>Saray Ortiz Cordero</strong>, programadora junior en búsqueda de oportunidades de prácticas remotas donde aportar valor desde el primer día y seguir aprendiendo. Me especializo en desarrollo web full-stack, con habilidades en HTML, CSS, JavaScript, y MySQL. Mi pasión por la tecnología y la resolución de problemas me impulsa a crear soluciones innovadoras y eficientes.
+                        </p>
+                        <p class="about_text">
+                            Me considero una persona proactiva, con gran capacidad de adaptación y trabajo en equipo. Estoy comprometida con el aprendizaje continuo y la mejora constante de mis habilidades técnicas y blandas. Estoy emocionada por contribuir a proyectos reales y formar parte de un equipo dinámico en el mundo del desarrollo web.
+                        </p>
+
+                        <div class="about_cta">
+                            <a href="assets/pdf/CV-Saray-Ortiz-Cordero.pdf" class="btn btn--primary" target="_blank" aria-label="Ver CV en formato PDF">Currículum
+                            </a>
+                            <a href="https://github.com/SarayOrtizCordero" class="btn btn--secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub">GitHub
+                            </a>
+                        </div>
+
+                        <!-- Estadísticas -->
+                        <div class="about_stats">
+                            <div class="stat-item" data-target="14">
+                                <span class="stat-item_number">0</span>
+                                <span class="stat-item_suffix">+</span>
+                                <span class="stat-item_label">Tecnologías</span>
+                            </div>
+                            <div class="stat-item" data-target="2">
+                                <span class="stat-item_number">0</span>
+                                <span class="stat-item_suffix">+</span>
+                                <span class="stat-item_label">Proyectos</span>
+                            </div>
+                            <div class="stat-item" data-target="2">
+                                <span class="stat-item_number">0</span>
+                                <span class="stat-item_suffix">=</span>
+                                <span class="stat-item_label">Años aprendiendo</span>
+                            </div>
+                            <div class="stat-item" data-target="100">
+                                <span class="stat-item_number">0</span>
+                                <span class="stat-item_suffix">%</span>
+                                <span class="stat-item_label">Compromiso</span>
+                            </div>
+                        </div>
+
+                        <!-- Certificaciones y Formaciones -->
+                        <div class="bio_subsection">
+                            <h4 class="bio_subsection-title">Certificaciones y Formación</h4>
+                            <div class="bio_certifications">
+                                <div class="bio_cert-item">
+                                    <div class="bio_cert-info">
+                                        <strong>Curso superior en programación de páginas web</strong>
+                                        <span class="bio_cert-institution">MasterD</span>
+                                        <span class="bio_cert-year">2024 - 2025</span>
+                                    </div>
+                                </div>
+                                <div class="bio_cert-item">
+                                    <div class="bio_cert-info">
+                                        <strong>Curso de iniciación al desarrollo con IA</strong>
+                                        <span class="bio_cert-institution">Big School</span>
+                                        <span class="bio_cert-year">2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div class="bio_subsection">
+                            <h4 class="bio_subsection-title">Habilidades Blandas</h4>
+                            <div class="bio_soft-skills">
+                                <div class="bio_skill-item">
+                                    <span class="bio_skill-text">Aprendizaje rápido de nuevas tecnologías</span>
+                                </div>
+                                <div class="bio_skill-item">
+                                    <span class="bio_skill-text">Trabajo en equipo y comunicación</span>
+                                </div>
+                                <div class="bio_skill-item">
+                                    <span class="bio_skill-text">Resolución de problemas y creatividad</span>
+                                </div>
+                                <div class="bio_skill-item">
+                                    <span class="bio_skill-text">Flexibilidad y Adaptación a Entornos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_skills" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="about_skills-title">Habilidades Técnicas</h3>
+
+                        <div class="skills-group">
+                            <h4 class="skills-group_title">Frontend</h4>
+                            <ul class="skills-list" role="list">
+                                <li class="skill-item" data-level="90">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">HTML5</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="85">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">CSS3</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="75">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">JavaScript</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="80">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Bootstrap</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="85">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Flexbox</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-group">
+                            <h4 class="skills-group_title">Backend</h4>
+                            <ul class="skills-list" role="list">
+                                <li class="skill-item" data-level="75">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">PHP</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="80">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">SQL y MySQL</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="70">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Apache Server</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="75">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">XAMPP</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-group">
+                            <h4 class="skills-group_title">IA Generativa y Productiva</h4>
+                            <ul class="skills-list" role="list">
+                                <li class="skill-item" data-level="85">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">GitHub Copilot</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="80">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Gemini y Claude</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="75">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Prompt Engineering</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-group">
+                            <h4 class="skills-group_title">DevOps y Herramientas</h4>
+                            <ul class="skills-list" role="list">
+                                <li class="skill-item" data-level="85">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Git y GitHub</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="70">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">VirtualBox</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-item" data-level="80">
+                                    <div class="skill-item_header">
+                                        <span class="skill-item_name">Windows/Linux</span>
+                                        <span class="skill-item_percentage">0%</span>
+                                    </div>
+                                    <div class="skill-item_bar">
+                                        <div class="skill-item_progress"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-group">
+                            <h4 class="skills-group_title">Metodologías</h4>
+                            <ul class="tags-list" role="list">
+                                <li class="tag">Mobile-First</li>
+                                <li class="tag">WCAG 2.1</li>
+                                <li class="tag">Responsive Design</li>
+                                <li class="tag">Clean Code</li>
+                                <li class="tag">SEO</li>
+                                <li class="tag">Generative AI Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact" aria-labelledby="contact-title">
+            <div class="contact_container">
+                <div class="section-header">
+                    <h2 id="contact-title" class="section-header_title">¿Hablamos?</h2>
+                    <p class="section-header_description">
+                        Estoy abierta a nuevas oportunidades y lista para integrarme a equipos innovadores. Si buscas una programadora junior apasionada y comprometida, no dudes en contactarme.
+                    </p>
+                </div>
+
+                <div class="contact_content">
+                    <div class="contact_info" data-aos="fade-right">
+                        <h3 class="contact_info-text">Información de contacto</h3>
+                        <p class="contact_info-text">
+                            Contactame a traves de:
+                        </p>
+
+                        <ul class="contact_links" role="list">
+                            <li class="contact_link-item">
+                                <svg class="contact_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <a href="tel:+34675843655" class="contact_link">+34 675 84 36 55</a>
+                            </li>
+                            <li class="contact_link-item">
+                                <svg class="contact_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="mailto:sarayortizcordero4@gmail.com" class="contact_link">sarayortizcordero4@gmail.com</a>
+                            </li>
+                            <li class="contact_link-item">
+                                <svg class="contact_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span class="contact_link">Las Cabezas de San Juan, Sevilla</span>
+                            </li>
+                            <li class="contact_link-item">
+                                <svg class="contact_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <a href="https://github.com/SarayOrtizCordero" target="_blank" rel="noopener noreferrer" class="contact_link">github.com/SarayOrtizCordero</a>
+                            </li>
+                            <li class="contact_link-item">
+                                <svg class="contact_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <a href="https://www.linkedin.com/in/saray-ortiz-cordero" target="_blank" rel="noopener noreferrer" class="contact_link">linkedin.com/in/saray-ortiz-cordero</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact_form" id="contact-form" data-aos="fade-left" data-aos-delay="100" novalidate">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true" aria-describedby="name-error">
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true" aria-describedby="email-error">
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required aria-required="true" aria-describedby="subject-error">
+                            <span class="form-error" id="subject-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Enviar</button>
+
+                        <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer_container">
+            <p class="footer_text">
+                &copy; 2025 Saray Ortiz Cordero. Diseñado y desarrollado por mí con <span class="footer_heart" aria-label="amor">💙</span>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botón de scroll to top -->
+    <button class="scroll-to-top" aria-label="Volver arriba" title="Volver arriba"></button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/typing-effect.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/skills-stats.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("y9NbuQAQg3_blBHJO");
+        })();
+    </script>
+    <script src="js/contact.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
