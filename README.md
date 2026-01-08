@@ -31,7 +31,7 @@ Portfolio web profesional desarrollado para mostrar proyectos, habilidades técn
 - **SEO Optimizado**: Meta tags y estructura semántica para mejor indexación
 - **Accesibilidad WCAG 2.1**: Cumplimiento con estándares de accesibilidad web
 
-## 🛠 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Core Technologies
 - **HTML5**: Estructura semántica y accesible
@@ -280,3 +280,4 @@ Este proyecto es un portfolio personal. Aunque puedes usarlo como referencia o b
 **Diseñado y desarrollado por Saray Ortiz Cordero**
 
 *Última actualización: 2025*
+
