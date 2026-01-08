@@ -1,9 +1,9 @@
-# Video Game Universe — Portafolio Web
+# Portafolio Web
 
 Resumen
 -----------------
 
-Este repositorio contiene un portafolio web estático llamado "Video Game Universe" construido con HTML5, CSS3 y JavaScript (Vanilla). La estructura actual incluye una página principal (`index.html`), hojas de estilo en `css/styles.css` y varios scripts en `js/` que proporcionan navegación, efectos y lógica de formularios. El sitio está pensado para presentar proyectos/juegos, captar leads a través de los formularios de `contacto` y `presupuesto`, y mostrar habilidades y proyectos.
+Este repositorio contiene un portafolio web estático construido con HTML5, CSS3 y JavaScript (Vanilla). La estructura actual incluye una página principal (`index.html`), hojas de estilo en `css/styles.css` y varios scripts en `js/` que proporcionan navegación, efectos y lógica de formularios. El sitio está pensado para mostrar habilidades y proyectos.
 
 Análisis UI/UX (Principios de Diseño)
 -------------------------------------
@@ -109,4 +109,5 @@ Este README fue generado para ayudarte con un plan de mejoras y la documentació
 ---
 
 Fecha de generación: 11 de diciembre de 2025
+
 
