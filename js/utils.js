@@ -302,50 +302,6 @@ const Utils = (() => {
                     this.cursor?.classList.remove('cursor-pulse');
                 }, 300);
             });
-            
-            // Agregar efectos hover a todos los elementos interactivos
-            const interactiveElements = document.querySelectorAll(
-                'a, button, .btn, .btn--primary, .btn--secondary, ' +
-                '.btn-project, .btn-project--demo, .btn-project--code, ' +
-                '.nav_cta-btn, .nav_link, .nav_item, .project-card, ' +
-                'input[type="submit"], input[type="button"], input[type="reset"], ' +
-                'select, .scroll-to-top, .form-input, .form-textarea'
-            );
-            
-            interactiveElements.forEach(el => {
-                el.addEventListener('mouseenter', () => {
-                    // Asegurar que el cursor nativo esté oculto
-                    el.style.cursor = 'none';
-                    this.isHovering = true;
-                    this.cursor?.classList.add('cursor-hover');
-                    if (this.auraOuter) {
-                        this.auraOuter.style.setProperty('--aura-glow', '0 0 50px rgba(0, 224, 255, 0.9)');
-                    }
-                });
-                el.addEventListener('mouseleave', () => {
-                    this.isHovering = false;
-                    this.cursor?.classList.remove('cursor-hover');
-                    if (this.auraOuter) {
-                        this.auraOuter.style.setProperty('--aura-glow', '0 0 25px rgba(0, 224, 255, 0.7)');
-                    }
-                });
-            });
-            
-            // Agregar también para elementos dinámicamente creados
-            const observer = new MutationObserver(() => {
-                document.querySelectorAll('a, button, .btn, .project-card').forEach(el => {
-                    if (!el.dataset.cursorHandled) {
-                        el.dataset.cursorHandled = 'true';
-                        el.style.cursor = 'none';
-                    }
-                });
-            });
-            
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true
-            });
-        }
 
         /**
          * Actualiza la posición del cursor con suavizado mejorado
@@ -523,3 +479,4 @@ const Utils = (() => {
 
     return { init };
 })();
+
