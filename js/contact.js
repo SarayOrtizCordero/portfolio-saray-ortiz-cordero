@@ -7,8 +7,8 @@
  */
 
 const ContactForm = (() => {
-    const form = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
+    let form = null;
+    let formMessage = null;
 
     /**
      * Validadores para cada campo del formulario
@@ -78,18 +78,24 @@ const ContactForm = (() => {
     /**
      * Envía el formulario usando EmailJS
      */
-    const submitToEmailJS = async (form) => {
+    const submitToEmailJS = async (formElement) => {
+        // Validar que EmailJS esté disponible
+        if (typeof emailjs === 'undefined') {
+            throw new Error('EmailJS no está disponible. Por favor, verifica la configuración.');
+        }
+
         try {
-            await emailjs.sendForm('service_703yk7s', 'template_3q1x525', form);
+            await emailjs.sendForm('service_703yk7s', 'template_3q1x525', formElement);
 
             showMessage('✅ ¡Mensaje enviado con éxito! Te contactaré pronto.', true);
-            form.reset();
+            formElement.reset();
 
-            const fields = form.querySelectorAll('.form-input, .form-textarea');
+            const fields = formElement.querySelectorAll('.form-input, .form-textarea');
             fields.forEach(field => field.classList.remove('error'));
         } catch (error) {
             console.error('Error al enviar con EmailJS:', error);
-            showMessage('❌ Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.', false);
+            const errorMessage = error.text || 'Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.';
+            showMessage(`❌ ${errorMessage}`, false);
             throw error;
         }
     };
@@ -119,7 +125,18 @@ const ContactForm = (() => {
     };
 
     const init = () => {
-        if (!form) return;
+        // Obtener elementos cuando se inicializa (por si se carga antes del DOM)
+        form = document.getElementById('contact-form');
+        formMessage = document.getElementById('form-message');
+        
+        if (!form) {
+            console.warn('ContactForm: No se encontró el formulario de contacto');
+            return;
+        }
+        
+        if (!formMessage) {
+            console.warn('ContactForm: No se encontró el elemento para mensajes');
+        }
         
         const fields = form.querySelectorAll('.form-input, .form-textarea');
         fields.forEach(field => {
