@@ -10,7 +10,7 @@ const Parallax = (() => {
     const CONFIG = {
     contentSpeedFactor: 0.3,
     backgroundSpeedFactor: 0.5,
-    fadeOutSpeed: 1200, // más lento, se desvanece en el doble de scroll
+    fadeOutSpeed: 1200,
     maxScrollDistance: null
     };
 
@@ -124,8 +124,8 @@ const Parallax = (() => {
      * @returns {void}
      */
     const stop = () => {
-        window.removeEventListener('scroll', handleScroll);
-        window.removeEventListener('resize', updateMaxScrollDistance);
+        window.removeEventListener('scroll', handleScroll { passive: true });
+        window.removeEventListener('resize', updateMaxScrollDistance { passive: true });
         cleanup();
     };
 
