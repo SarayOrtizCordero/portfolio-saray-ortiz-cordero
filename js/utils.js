@@ -302,6 +302,7 @@ const Utils = (() => {
                     this.cursor?.classList.remove('cursor-pulse');
                 }, 300);
             });
+        }
 
         /**
          * Actualiza la posición del cursor con suavizado mejorado
@@ -479,4 +480,5 @@ const Utils = (() => {
 
     return { init };
 })();
+
 
