@@ -271,7 +271,7 @@ Programadora Full-Stack Junior
 - **Curso Superior en Programación de Páginas Web** - MasterD (2024-2025)
 - **Curso de Iniciación al Desarrollo con IA** - Big School (2025)
 
-## 🛡️ Licencia
+## Licencia
 
 Este proyecto es un portfolio personal. Aunque puedes usarlo como referencia o base para tu propio portfolio.
 
@@ -280,4 +280,5 @@ Este proyecto es un portfolio personal. Aunque puedes usarlo como referencia o b
 **Diseñado y desarrollado por Saray Ortiz Cordero**
 
 *Última actualización: 2025*
+
 
