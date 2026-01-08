@@ -330,6 +330,7 @@ const Utils = (() => {
             } else if (distance < 5) {
                 lerpFactor = 0.1; // Más suave para movimientos pequeños
             }
+        }
             
             // Aplicar interpolación
             this.cursorX += (this.mouseX - this.cursorX) * lerpFactor;
@@ -480,5 +481,6 @@ const Utils = (() => {
 
     return { init };
 })();
+
 
 
