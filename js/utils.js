@@ -316,7 +316,7 @@ const Utils = (() => {
             this.prevCursorX = this.cursorX;
             this.prevCursorY = this.cursorY;
             
-            // Interpolación lineal (LERP) mejorada
+            // Interpolación lineal (LERP)
             // Factor dinámico: más rápido cuando hay más distancia
             const dx = this.mouseX - this.cursorX;
             const dy = this.mouseY - this.cursorY;
@@ -330,16 +330,6 @@ const Utils = (() => {
             } else if (distance < 5) {
                 lerpFactor = 0.1; // Más suave para movimientos pequeños
             }
-        }
-            
-            // Aplicar interpolación
-            this.cursorX += (this.mouseX - this.cursorX) * lerpFactor;
-            this.cursorY += (this.mouseY - this.cursorY) * lerpFactor;
-            
-            // Usar left/top directamente para máximo rendimiento y fluidez
-            // El navegador optimiza bien estas propiedades y es más directo
-            this.cursor.style.left = this.cursorX + 'px';
-            this.cursor.style.top = this.cursorY + 'px';
         }
 
         /**
@@ -481,6 +471,7 @@ const Utils = (() => {
 
     return { init };
 })();
+
 
 
 
