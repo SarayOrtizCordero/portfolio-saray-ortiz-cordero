@@ -330,6 +330,13 @@ const Utils = (() => {
             } else if (distance < 5) {
                 lerpFactor = 0.1; // Más suave para movimientos pequeños
             }
+
+            // Interpolación suave (easing)
+            this.cursorX += (this.mouseX - this.cursorX) * 0.2;
+            this.cursorY += (this.mouseY - this.cursorY) * 0.2;
+            
+            this.cursor.style.left = (this.cursorX - 12) + 'px';
+            this.cursor.style.top = (this.cursorY - 12) + 'px';
         }
 
         /**
@@ -471,6 +478,7 @@ const Utils = (() => {
 
     return { init };
 })();
+
 
 
 
